@@ -1,13 +1,15 @@
 import streamlit as st
 import pickle
 import pandas as pd
+from numpy.ma.core import min_val
 
 st.subheader("Input the following to make predictions ")
 
 year = st.number_input("Enter the year : ",
-    min_value=0,        # Prevents negative values
+    min_value=2025,        # Prevents negative values
     step=1,              # Moves in whole number steps
-    format="%d"          # Displays as integer (no decimals# )
+    format="%d",          # Displays as integer (no decimals# )
+    max_value=2040
 )
 
 min_count = st.number_input(
