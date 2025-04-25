@@ -15,8 +15,7 @@ def main():
     -  Explore HIV data trends and patterns  
     -  Learn about the model behind the predictions  
     -  Visualize HIV prevalence across the globe  
-    -  Make predictions based on custom inputs  
-    -  Ask questions to our chatbot assistant
+    -  Make predictions based on custom inputs 
     """)
 
     st.info("Navigate through the sidebar to get started!")
